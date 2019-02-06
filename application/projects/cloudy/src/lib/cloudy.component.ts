@@ -77,7 +77,7 @@ export class CloudyComponent{
 
     ngDoCheck(): void {
 	    //TODO add image
-        let tagListState = JSON.stringify(this.tags.map(({ text: text, weight: weight , image:image }) => [ text, weight ])); // TODO: Improve performance, use KeyValueDiffer/IterableDiffer
+        let tagListState = JSON.stringify(this.tags.map(({ text: text, weight: weight , image:image }) => [ text, weight,image  ])); // TODO: Improve performance, use KeyValueDiffer/IterableDiffer
         if (this._previousTagListState !== tagListState) {
             this._previousTagListState = tagListState;
             this.update();

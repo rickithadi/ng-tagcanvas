@@ -22,7 +22,8 @@ export class AppComponent {
 		options: TagCanvasOptions = {
 					dragControl: true,
 			//BUG imageMode both does not work, errordomexception
-			 // imageMode:'both',
+			// imageMode:null,
+			imageMode:'text',
 					clickToFront: 500,
 					initial: [ .1, 0 ],
 					weight: true
